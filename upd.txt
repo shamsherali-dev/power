@@ -2,4 +2,8 @@ this is upd file
 
 this is the new line here 
 
+<<<<<<< HEAD
 wow
+=======
+its the main file ;
+>>>>>>> adf484f45d7b90e5ae36da1b1becc776b1f619f9
