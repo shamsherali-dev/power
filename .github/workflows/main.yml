@@ -1,0 +1,13 @@
+name: Greeting
+on:
+  push:
+    branches: [main]
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: greeting
+        run: echo "welcome to CI/CD"
+
+  
+  
