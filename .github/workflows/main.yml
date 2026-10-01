@@ -5,6 +5,9 @@ on:
 jobs:
   greeting:
       runs-on: ubuntu-latest
+      concurrency:
+        group: deploy
+        cancel-in-progress: true
       steps:
         - name: message
           run: echo "welcome to schedule job."
