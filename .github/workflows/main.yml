@@ -1,11 +1,11 @@
 name: schedule-event
 on: 
   schedule:
-    - cron: "03 * * * *"  
+    - cron: "01 * * * *"  
 jobs:
   greeting:
       runs-on: ubuntu-latest
       steps:
         - name: message
-          run: echo "welcome to schedule job "
+          run: echo "welcome to schedule job."
           
