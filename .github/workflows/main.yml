@@ -1,7 +1,7 @@
 name: schedule-event
 on: 
   schedule:
-    - cron: "*/02 * * * *"  
+    - cron: "*/2 * * * *"  
 jobs:
   greeting:
       runs-on: ubuntu-latest
