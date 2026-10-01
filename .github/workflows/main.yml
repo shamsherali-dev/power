@@ -1,13 +1,11 @@
-name: Greeting
-on:
-  push:
-    branches: [main]
+name: schedule-event
+on: 
+  schedule:
+    - cron: "03 * * * *"  
 jobs:
-  welcome:
-    runs-on: ubuntu-latest
-    steps:
-      - name: greeting
-        run: echo "welcome to CI/CD"
-
-  
-  
+  greeting:
+      runs-on: ubuntu-latest
+      steps:
+        - name: message
+          run: echo "welcome to schedule job "
+          
